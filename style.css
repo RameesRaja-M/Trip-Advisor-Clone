@@ -1,0 +1,621 @@
+/* Overall Project */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body */
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar-1 */
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: white;
+    cursor: pointer;
+
+}
+.navbar__s1__title{
+    color: black;
+}
+
+.navbar__s1__image {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.navbar__s2 p:hover {
+    color: #34E0A1;
+}
+
+.navbar__s3 {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar__s3__button {
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navbar__s3__button:hover {
+    opacity: 0.5;
+}
+
+.navbar__s3__button__1 {
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+/* Navbar-2 */
+
+.navbar-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+
+
+}
+
+.navbar-2__s2 {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.navbar-2__s2 p:hover {
+    color: #34E0A1;
+    text-decoration: underline;
+}
+
+
+.navbar-2__s3 {
+    margin-top: 50px;
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-2__s3 input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+
+}
+
+.navbar-2__s3 button {
+    background-color: #34E0A1;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Sale image  */
+
+.sale-image {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-basis: 20%;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.sale-image__image {
+    width: 100%;
+}
+
+.sale-image__offer {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    font-size: x-large;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sale-image__offer__p1 {
+    border-radius: 10px;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 12%;
+    left: 205px;
+    cursor: pointer;
+}
+
+.sale-image__offer__button1:hover {
+    opacity: 0.5;
+}
+
+.sale-image__offer__p2 {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    cursor: pointer;
+    top: 100%;
+}
+
+.sale-image__offer__button2:hover {
+    opacity: 0.5;
+}
+
+/* Meal  */
+
+.meal {
+    padding: 10px;
+}
+
+.meal__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+  
+    
+}
+.meal-card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+}
+
+.meal-card:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.meal__container h2 {
+    position: relative;
+    bottom: 45px;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.meal__container img {
+    border-radius: 10px;
+    
+}
+
+/* Travel */
+
+.travel {
+    padding: 30px;
+}
+
+.travel-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.travel-place{
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.travel-place:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.travel-container img {
+    height: 250px;
+    width: 425px;
+    border-radius: 20px;
+}
+
+/* Tour */
+
+.tour {
+    padding: 30px;
+}
+
+.tour-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-size: small;
+}
+
+.tour-place {
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.tour-place:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.tour-container img {
+    border-radius: 20px;
+}
+
+/* Asia */
+
+.asia {
+    padding: 30px;
+}
+
+.asia-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+    text-align: center;
+}
+.asia-places{
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.asia-places:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.asia-container h2 {
+    position: relative;
+    bottom: 42px;
+    color: white;
+    font-weight: 900;
+    
+
+}
+
+.asia-container img {
+    border-radius: 10px;
+}
+
+/* Madurai2  */
+
+.madurai2 {
+    padding: 30px;
+}
+
+.madurai2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    position: static;
+}
+.madurai2-places{
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.madurai2-places:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.madurai2-container h2 {
+    position: relative;
+    bottom: 42px;
+    color: white;
+    font-weight: 900;
+}
+
+.madurai2-container img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Holiday */
+
+.holiday {
+    padding: 30px;
+}
+
+.holiday-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    position: static;
+}
+.holiday-places{
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+.holiday-places:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.holiday-container h2 {
+    position: relative;
+    bottom: 42px;
+    color: white;
+    font-weight: 900;
+}
+
+.holiday-container img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Banner */
+
+.banner {
+
+    position: relative;
+}
+
+.banner__image {
+    width: 100%;
+}
+
+.banner__offer {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: x-large;
+    color: white;
+}
+
+.banner__offer button {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.banner__offer button:hover {
+    opacity: 0.5;
+}
+
+/* footer */
+
+.footer {
+    padding: 30px;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.footer__one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-grow: 1;
+    gap: 20px;
+    border-bottom: solid black 2px;
+}
+
+
+.footer__one h4 {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer__one p {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer__one p:hover {
+    text-decoration: underline;
+}
+
+.footer__one__s4 {
+    position: relative;
+    left: 250px;
+    cursor: pointer;
+}
+
+/* Footer-Section Two */
+
+.footer__two {
+    font-size: small;
+
+}
+
+.footer__two__s1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    width: 25%;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+.footer__two__s1 img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer__two__s2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 10px;
+    font-size: small;
+    position: relative;
+    left: 70px;
+    bottom: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer__two__s2 p:hover {
+    color: #34E0A1;
+}
+
+
+.footer__two__s3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    font-size: smaller;
+    width: 60%;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.footer__two__s4 {
+    display: flex;
+    position: relative;
+    left: 1000px;
+    bottom: 80px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer__two__s4 select {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.footer__two__s5 {
+    display: flex;
+    position: relative;
+    left: 1175px;
+    bottom: 70px;
+    font-size: x-large;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Media Qureies */
+
+@media screen and (max-width :800px) {
+    *{
+        font-size: 10px;
+        
+    }
+   
+}
+
+@media screen and (max-width :600px) {
+   
+    .meal-card{
+    flex-basis: 40%;
+   }
+   .travel-place{
+    flex-basis: 40%;
+
+   }
+   .tour-place{
+    flex-basis: 40%;
+   }
+   .asia-places{
+    flex-basis: 40%;
+   }
+   .madurai2-places{
+    flex-basis: 40%;
+   }
+   .holiday-places{
+    flex-basis: 40%;
+   }
+   .sale-image__offer{
+    flex-basis: 40%;
+   }
+   .navbar{
+    display: none;
+   }
+   .navbar-2{
+    display: none;
+   }
+    .sale-image__offer__p1,.sale-image__offer__p2{
+    display: none;
+   } 
+   .footer__one__s4{
+   display: none;
+   }
+
+}
+@media screen and (max-width :500px) {
+    .sale-image__offer__button1{
+       flex-basis: 40%;
+    }
+}
